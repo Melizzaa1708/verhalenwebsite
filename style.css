@@ -1,0 +1,201 @@
+@font-face{
+    font-family: Museo300;
+    src:url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-300-webfont.woff2);
+}
+
+body{
+    font-family: Museo300;
+    margin:0;
+}
+
+main{
+    padding:30em 3em 3em 3em;
+    z-index:1;
+}
+
+header{
+    position:fixed;
+    background-color: white;
+    top:0;
+    z-index:2;
+    width:100%;
+}
+
+ul{
+    border-bottom: solid 0.1em #a6c4c4;
+    height: 10em;
+    margin: 3em 3em 4em 3em;
+}
+
+li{
+    width:30%;
+    display:inline;
+    margin-right:22%;
+}
+
+#menu{
+    background-image: url('images/menu.svg');
+    width:8em;
+    height:8em;
+    background-color:transparent;
+    border:0px;
+}
+
+#logo{
+    width:15em;
+    position:absolute;
+    font-size:none;
+}
+
+#sortFilter{
+    background-image: url('images/sortFilter.svg');
+    width:9em;
+    height:6em;
+    background-color:transparent;
+    display:inline;
+    float:right;
+    border:0px;
+    margin:0.7em 0 0 3em;
+}
+
+summary{
+    background-color:#6d105c;
+    padding:1em;
+    color:white;
+    text-transform: uppercase;
+    font-size:3em;
+}
+
+#verhaal{
+     text-decoration: none;
+    font-size:1.5em;
+    display:inline;
+    color:black;
+    position:absolute;
+    margin-top:0.5em;
+}
+
+figure{
+    margin:0;
+    position:relative;
+}
+
+figcaption{
+    display:inline;
+    background-color: #981a81;
+    color:white;
+    position:absolute;
+    top:12.2em;
+    left:2em;
+    padding:0.2em;
+    text-transform: uppercase;
+}
+
+form{
+    background-color:#981a81;
+    padding:2em;
+    height:5em;
+    margin:3em;
+}
+
+#zoek{
+    width: 13.5em;
+    margin-right:0.4em;
+    padding: 0.7em 1em;
+    display: inline;
+    box-sizing: border-box;
+    font-size: 2em;
+    border-radius: 0.2em;
+    border:0.5em;
+    font-family: Museo300;
+}
+
+#zoekKnop{
+    width: 5em;
+    padding: 0.7em 1em;
+    display: inline;
+    box-sizing: border-box;
+    font-size: 2em;
+    border-radius: 0.2em;
+    border:0.5em;
+    font-family: Museo300;
+    text-transform: uppercase;
+}
+
+article{
+    font-size:2em;
+    padding:2em;
+    border:1px solid #a6c4c4;
+}
+
+#verhaal84{
+    font-size:2em;
+    padding:2em;
+    border:1px solid #a6c4c4;
+    background-size: cover;
+    background-image: url(images/manAchter.svg)
+}
+
+#verhaal84>p{
+    color:white;
+}
+
+section{
+    padding-top:1em;
+}
+
+#favorieten{
+    background-image: url('images/like.svg');
+    width:9.5em;
+    height:9em;
+    background-color:transparent;
+    display:inline;
+    border:0px;
+    margin:0.7em 0em 0 47em;
+}
+
+#favorieten2{
+    background-image: url('images/like.svg');
+    width:9.5em;
+    height:9em;
+    background-color:transparent;
+    display:inline;
+    border:0px;
+    margin-left:15em;
+}
+
+#favorieten2:active{
+    background-image: url(images/a-like.svg)
+}
+
+#favorieten:active{
+    background-image: url(images/a-like.svg)
+}
+
+#downloaden{
+    background-image: url('images/opslaan.svg');
+    width:9.5em;
+    height:9em;
+    background-color:transparent;
+    display:inline;
+    border:0px;
+    margin:0.7em 1em 0 0;
+}
+
+#downloadTekst>img{
+    width:16em;
+    height:1em;
+    margin-left:0.5em;
+}
+
+#titelMan{
+    display:inline;
+    height:4em;
+    width:14em;
+}
+
+a{
+    text-decoration: none;
+    color:#981a81;
+    font-size:0.8em;
+}
