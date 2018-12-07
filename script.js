@@ -14,7 +14,7 @@ downloadbutton.addEventListener("click", function(){
 });
 
 filter.addEventListener("click", function(){
-    var x = document.querySelector("body form, div");
+    var x = document.querySelector("body form");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
