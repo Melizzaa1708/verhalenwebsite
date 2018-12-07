@@ -8,8 +8,43 @@ body{
     margin:0;
 }
 
+/*opengeklapte formulier van sort en filter*/
+/*body form{
+    height:100%;
+    width:44em;
+    padding:3em;
+    background-color:white;
+    position:fixed;
+    z-index: 3;
+    display:inline;
+    top:0;
+}
+
+body form legend{
+    text-transform: uppercase;
+    font-size:3em;
+}
+
+body form fieldset{
+    border:none;
+}
+
+body div{
+    width:12em;
+    height:100%;
+    background-color: #000000a6;
+    position:fixed;
+    z-index: 3;
+    top:0;
+}
+*/
+/**********************/
+
+body form{display:none;}
+body div{display:none;}
+
 main{
-    padding:30em 3em 3em 3em;
+    padding:12em 3em 3em 3em;
     z-index:1;
 }
 
@@ -47,7 +82,7 @@ li{
     font-size:none;
 }
 
-#sortFilter{
+header form button{
     background-image: url('images/sortFilter.svg');
     width:9em;
     height:6em;
@@ -91,12 +126,13 @@ figcaption{
     text-transform: uppercase;
 }
 
-form{
+header form{
     background-color:#981a81;
     padding:2em;
     height:5em;
     margin:3em;
 }
+
 
 #zoek{
     width: 13.5em;
@@ -165,14 +201,14 @@ section{
 }
 
 #favorieten2:active{
-    background-image: url(images/a-like.svg)
+    background-image: url('images/a-like.svg')
 }
 
-#favorieten:active{
-    background-image: url(images/a-like.svg)
+#favorieten:focus{
+    background-image: url('images/a-like.svg')
 }
 
-#downloaden{
+.downloaden{
     background-image: url('images/opslaan.svg');
     width:9.5em;
     height:9em;
@@ -182,7 +218,7 @@ section{
     margin:0.7em 1em 0 0;
 }
 
-#downloadTekst>img{
+article p>img{
     width:16em;
     height:1em;
     margin-left:0.5em;
