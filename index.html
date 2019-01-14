@@ -7,19 +7,23 @@
     </head>
     <body>
          <!--formulier dat openklapt, nadat de sort-filter knop aangeklikt wordt.-->
-           //enige div als donker background naast formulier
-            <div></div>
             <form method="get" action="#" target="_blank">
-                   <legend>Sorteer en verfijnen</legend>
-                    <fieldset>
-                        <legend>Sorteer</legend>
+                    <button type="button">&#60;</button>
+                        <legend>Sorteer en verfijnen</legend>
+                       <fieldset>
                         <details>
-                            <summary>Beoordeling: hoog - laag</summary>
-                            <p></p>
+                            <summary>Beoordeling</summary>
+                        <select name="sorteer" size="4">
+                            <option value="beoordeling">Beoordeling laag-hoog</option>
+                            <option value="favorieten">Favorieten</option>
+                            <option value="alfabetisch" selected>Alfabetisch A-Z</option>
+                            <option value="nummeriek">Nummeriek 0-99</option>
+                        </select>
                         </details>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Verfijnen</legend>
+                        </fieldset>
+                        <fieldset>
+                       <details>
+                        <summary>Verfijnen</summary>
                         <details>
                             <summary>Beoordeling</summary>
                             <p></p>
@@ -28,73 +32,152 @@
                             <summary>Genre</summary>
                             <p></p>
                         </details>
-                    </fieldset>
+                        </details>
+                        </fieldset>
+                        <input type="submit" value="Opslaan">
              </form>
         <!---------------------------------------------------------------------->
 
 
         <header>
-            <ul>
-                <li><button type="button" id="menu"></button></li>
-                <li><a href="index.html" id="logo"><img src="images/sitelogo.svg"></a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="images/sitelogo.svg"></a></li>
+                    <li>Welkom, Lizz<button type="button"></button></li>
+                </ul>
+            </nav>
 
                 <form method="get" action="#" target="_blank">
-                    <input type="search" id="zoek" placeholder="Waarmee kunnen we je helpen?">
-                    <input type="submit" id="zoekKnop" value="Zoek">
+                    <input type="search" placeholder="Waarmee kunnen we je helpen?">
+                    <input type="submit" value="Zoek">
                     <button type="button" ></button>
                 </form>
         </header>
         <main>
+                <img src="images/banner.png">
                 <details>
                     <summary>Mijn downloads</summary>
+                    <section>
+                    <article>
+                        <figure><a href="verhaal53.html" title="Verhaal 53"><img src="images/verhaal86.jpg" alt="verhaal 53"></a>
+                            <figcaption>Familie</figcaption>
+                            </figure>
+                                 <ul>
+                                    <li><a href="verhaal53.html" title="Verhaal 53">53. Droom</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="2 sterren">&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+                    <article>
+                        <figure><a href="verhaal93.html" title="Verhaal 93"><img src="images/verhaal87.jpg" alt="verhaal 93"></a>
+                            <figcaption>Drama</figcaption>
+                            </figure>
+                                 <ul>
+                                    <li><a href="verhaal93.html" title="Verhaal 93">93. Nico Dijkshoorn die Mart Smeets imiteert.</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="5 sterren">&#10029;&#10029;&#10029;&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+                    <article>
+                        <figure><a href="verhaal101.html" title="Verhaal 101"><img src="images/verhaal88.jpg" alt="verhaal 101"></a>
+                            <figcaption>Horror</figcaption>
+                            </figure>
+                                 <ul>
+                                    <li><a href="verhaal101.html" title="Verhaal 101">101. Zombie</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="1 ster">&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+
+
+
+                        </section>
 
                 </details>
 
                 <details open>
                    <summary>99 verhalen</summary>
+                   <section>
                     <article>
-                        <figure><a href="verhaal84.html" title="Verhaal 84"><img src="images/verhaalVB.svg" alt="verhaalVoorbeeld"></a>
+                        <figure><a href="verhaal84.html" title="Verhaal 84"><img src="images/verhaal84.jpg" alt="verhaal 84"></a>
                             <figcaption>Drama</figcaption>
                             </figure>
-                             <section>
-                                 <a href="verhaal84.html" title="Verhaal 84" id="verhaal">84. De verwarde man</a>
-                                <button type="button" id="favorieten"></button>
-                                <button type="button" class="downloaden"></button>
-
-
-
-                             <!-- @Koop:  -->
-
-                             <!-- Deze balk moet in de eerste state -page load- niet zichtbaar zijn -->
-                                <p>Download:<img src="images/downloadbalk.gif" alt="downloadbalk"></p>
-                            <!------------------------------------------------------------------------------>
-
-
-
-
-
-
-                            </section>
+                                <ul>
+                                    <li><a href="verhaal84.html" title="Verhaal 84">84. De verwarde man</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="4 sterren">&#10029;&#10029;&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
                     </article>
                     <article>
-                        <figure><a href="verhaal84.html" title="Verhaal 84"><img src="images/verhaalVB.svg" alt="verhaalVoorbeeld"></a>
+                        <figure><a href="verhaal11.html" title="Verhaal 11"><img src="images/verhaal85.jpg" alt="verhaal 11"></a>
+                            <figcaption>Humor</figcaption>
+                            </figure>
+                                <ul>
+                                    <li><a href="verhaal11.html" title="Verhaal 11">11. Mop</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="4 sterren">&#10029;&#10029;&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+                    <article>
+                        <figure><a href="verhaal53.html" title="Verhaal 53"><img src="images/verhaal86.jpg" alt="verhaal 53"></a>
+                            <figcaption>Familie</figcaption>
+                            </figure>
+                                 <ul>
+                                    <li><a href="verhaal53.html" title="Verhaal 53">53. Droom</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="2 sterren">&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+                    <article>
+                        <figure><a href="verhaal93.html" title="Verhaal 93"><img src="images/verhaal87.jpg" alt="verhaal 93"></a>
                             <figcaption>Drama</figcaption>
                             </figure>
-                             <section>
-                                 <a href="verhaal84.html" title="Verhaal 84" id="verhaal">84. De verwarde man</a>
-                                <button type="button" id="favorieten"></button>
-                                <button type="button" class="downloaden"></button>
-                                <p>Download:<img src="images/downloadbalk.gif" alt="downloadbalk"></p>
-                            </section>
+                                 <ul>
+                                    <li><a href="verhaal93.html" title="Verhaal 93">93. Nico Dijkshoorn die Mart Smeets imiteert.</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="5 sterren">&#10029;&#10029;&#10029;&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
                     </article>
+                    <article>
+                        <figure><a href="verhaal101.html" title="Verhaal 101"><img src="images/verhaal88.jpg" alt="verhaal 101"></a>
+                            <figcaption>Horror</figcaption>
+                            </figure>
+                                 <ul>
+                                    <li><a href="verhaal101.html" title="Verhaal 101">101. Zombie</a></li>
+                                    <li><button type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="1 ster">&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+
+
+
+                        </section>
                 </details>
         </main>
-        <footer>
-            <p>WOW air - Katrínartún 4 - 105 Reykjavík - Kt. 451011-0220 - Vsknr. 109354
-            </p>
-            <a href="index.html">Neem contact met ons op</a>
-        </footer>
 
                 <script src="script.js"></script>
 
