@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>WOW air | 99 verhalen</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    </head>
+    <body>
+         <!--formulier dat openklapt, nadat de sort-filter knop aangeklikt wordt.-->
+            <form class="" method="get" action="#" target="_blank">
+                    <button type="button">&#60;</button>
+                        <legend>Sorteer en verfijnen</legend>
+                       <fieldset>
+                        <details>
+                            <summary>Beoordeling</summary>
+                        <select name="sorteer" size="4">
+                            <option value="beoordeling">Beoordeling laag-hoog</option>
+                            <option value="favorieten">Favorieten</option>
+                            <option value="alfabetisch" selected>Alfabetisch A-Z</option>
+                            <option value="nummeriek">Nummeriek 0-99</option>
+                        </select>
+                        </details>
+                        </fieldset>
+                        <fieldset>
+                       <details>
+                        <summary>Verfijnen</summary>
+                        <details>
+                            <summary>Beoordeling</summary>
+                            <p></p>
+                        </details>
+                         <details>
+                            <summary>Genre</summary>
+                            <p></p>
+                        </details>
+                        </details>
+                        </fieldset>
+                        <input type="submit" value="Opslaan">
+             </form>
+        <!---------------------------------------------------------------------->
+
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="images/sitelogo.svg"></a></li>
+                    <li>Welkom, Lizz<button type="button"></button></li>
+                </ul>
+            </nav>
+
+                <form method="get" action="zoek.html" target="_blank">
+                    <input type="search" placeholder="Waarmee kunnen we je helpen?">
+                    <input type="submit" value="Zoek">
+                    <button type="button" ></button>
+                </form>
+        </header>
+        <main>
+                <details open>
+                    <summary>Mijn zoekresultaten</summary>
+                    <p>U zocht naar: <ins></ins></p>
+                    <section>
+                    <article>
+                        <figure><a href="verhaal53.html" title="Verhaal 53"><img src="images/verhaal86.jpg" alt="verhaal 53"></a>
+                            <figcaption>Favorieten</figcaption>
+                            </figure>
+                                 <ul>
+                                    <li><a href="verhaal53.html" title="Verhaal 53">53. Droom</a></li>
+                                    <li><button class="favorieten" type="button"></button>
+                                        <button type="button"></button>
+                                    </li>
+                                    <li alt="2 sterren">&#10029;&#10029;</li>
+                                    <li></li>
+                                </ul>
+                    </article>
+
+                        </section>
+                </details>
+        </main>
+
+                <script src="script.js"></script>
+
+    </body>
+</html>

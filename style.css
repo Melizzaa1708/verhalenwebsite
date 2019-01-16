@@ -73,7 +73,7 @@ grid-template-rows:1fr 1fr;
 
 
     header form button{
-        padding-top:2.6% !important;
+        padding-top:2% !important;
         right: -2em;
     }
 
@@ -128,6 +128,17 @@ body form{
     box-shadow:0px 0px 10px 1px #000000a6;
 }
 
+aside{
+    background-color:#981a81d4;
+    color:white;
+    position:absolute;
+    z-index: 3;
+    padding:1em;
+    top:3em;
+    right:0;
+    border-radius: 0.8em;
+}
+
 body form legend{
     text-transform: uppercase;
     font-size:1em;
@@ -142,7 +153,7 @@ body form legend:first-child{
 
 body form fieldset{
     border:none;
-    padding:1em 0;
+    padding:0.5em 0;
 }
 
 body div{
@@ -237,7 +248,6 @@ body form input[type="submit"]{
     color:white;
     font-size: 1em;
     padding:1em;
-    margin-top:1em;
     border-radius:0.2em;
 }
 
@@ -295,6 +305,15 @@ article ul li:nth-of-type(4){
     margin-top:1em;
 }
 
+body form p{
+    color: #FFDF5D;
+    font-size:2em;
+}
+
+body form p:hover{
+    color: #99258d;
+}
+
 article ul li:nth-of-type(3){
     color: #FFDF5D;
     font-size:2em;
@@ -327,6 +346,51 @@ figcaption:hover{
 
 h1{
     font-size:1em;
+}
+
+fieldset ul{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+  grid-gap:0.5em;
+    margin:0;
+    margin-top:1em;
+    }
+
+fieldset ul li{
+    height:1em;
+    text-transform: uppercase;
+    color:white;
+    padding:2em 0.5em;
+    text-align: center;
+}
+
+ fieldset ul li:hover{
+    color:#981a81;
+}
+
+fieldset ul li:nth-of-type(1){
+    background-color:#595959;
+}
+
+fieldset ul li:nth-of-type(2){
+    background-color:#4CAF4A;
+}
+
+fieldset ul li:nth-of-type(3){
+    background-color:#f0957f;
+}
+
+fieldset ul li:nth-of-type(4){
+    background-color:#13143e;
+}
+
+fieldset ul li:nth-of-type(5){
+    background-color:#d84060;
+}
+
+fieldset ul li:nth-of-type(6){
+    background-color:#2bbba9;
 }
 
 header form{
@@ -395,6 +459,12 @@ article button:first-of-type{
     position:absolute;
 }
 
+article button#verhaal84{
+    width: 5%;
+    padding-top: 28%;
+    right:-12em;
+    position:relative;
+}
 
 
 article button:first-of-type:focus{
@@ -405,6 +475,10 @@ article button:first-of-type:focus{
 article button:first-of-type:hover{
     background-image: url('images/a-like.svg');
     transform:scale(1.1);
+}
+
+article button#favorieten{
+    background-image: url('images/a-like.svg');
 }
 
 article button:nth-of-type(2):focus{
@@ -428,7 +502,7 @@ article button:nth-of-type(2){
     background-color:transparent;
     display:inline;
     border:0px;
-    right:6em;
+    right:7em;
     position:absolute;
 }
 
@@ -464,12 +538,41 @@ main img{
     margin-bottom:1.5em;
 }
 
+del{
+    text-decoration: none;
+}
+
+small{
+    font-size:inherit;
+}
+
+@keyframes eerste {
+  0%   {left:0px; top:0px;}
+  25%  {left:100px; top:0px; font-size:3em;}
+  50%  {left:100px; top:100px;}
+  75%  {left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes tweede {
+  0%   {}
+  25%  {color:black;}
+  50%  {text-decoration: overline;}
+  75%  {text-decoration: underline;}
+  100% {}
+}
+
 .strong {
     margin-left:-4em;
     font-size:2em;
     margin-right:1em;
     font-family:"Times New Roman", Times, serif;
     font-weight:100;
+    width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: eerste;
+  animation-duration: 4s;
 }
 
 .small {
@@ -485,7 +588,7 @@ main img{
 
 .marked {
     margin-left:-4em;
-    font-size:2em;
+    font-size:3em;
     margin-right:1em;
     font-family:"Times New Roman", Times, serif;
     font-weight:100;
@@ -493,22 +596,16 @@ main img{
     color:black;
 }
 
+
 .del{
     text-decoration: line-through;
     margin-right: 3em;
     margin-left: 10em;
     font-size: 2em;
     font-family: "Courier New", Courier, monospace;
+        width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: tweede;
+  animation-duration: 4s;
 }
-
-ins{
-    margin-left:-4em;
-    font-size:2em;
-    margin-right:1em;
-    font-family:"Times New Roman", Times, serif;
-    font-weight:100;
-     text-decoration: underline;
-  text-decoration-style:wavy;
-    text-decoration-color: darkgrey;
-}
-

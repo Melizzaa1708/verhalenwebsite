@@ -7,12 +7,12 @@
     </head>
     <body>
          <!--formulier dat openklapt, nadat de sort-filter knop aangeklikt wordt.-->
-            <form method="get" action="#" target="_blank">
+            <form class="" method="get" action="#" target="_blank">
                     <button type="button">&#60;</button>
                         <legend>Sorteer en verfijnen</legend>
                        <fieldset>
                         <details>
-                            <summary>Beoordeling</summary>
+                            <summary>Sorteer</summary>
                         <select name="sorteer" size="4">
                             <option value="beoordeling">Beoordeling laag-hoog</option>
                             <option value="favorieten">Favorieten</option>
@@ -26,20 +26,25 @@
                         <summary>Verfijnen</summary>
                         <details>
                             <summary>Beoordeling</summary>
-                            <p></p>
+                            <p>&#10029;&#10029;&#10029;&#10029;&#10029;</p>
                         </details>
                          <details>
                             <summary>Genre</summary>
-                            <p></p>
+                            <ul>
+                                <li>Drama</li>
+                                <li>Humor</li>
+                                <li>Familie</li>
+                                <li>Horror</li>
+                                <li>Romantiek</li>
+                                <li>Sci-fi</li>
+                            </ul>
                         </details>
                         </details>
                         </fieldset>
                         <input type="submit" value="Opslaan">
              </form>
         <!---------------------------------------------------------------------->
-
-
-        <header>
+                   <header>
             <nav>
                 <ul>
                     <li><a href="index.html"><img src="images/sitelogo.svg"></a></li>
@@ -47,8 +52,8 @@
                 </ul>
             </nav>
 
-                <form method="get" action="#" target="_blank">
-                    <input type="search" placeholder="Waarmee kunnen we je helpen?">
+                <form method="get" action="zoek.html" target="_blank">
+                    <input id="test23" type="search" placeholder="Waarmee kunnen we je helpen?">
                     <input type="submit" value="Zoek">
                     <button type="button" ></button>
                 </form>
@@ -56,50 +61,16 @@
         <main>
                 <img src="images/banner.png">
                 <details>
-                    <summary>Mijn downloads</summary>
+                    <summary>Mijn favorieten</summary>
                     <section>
                     <article>
-                        <figure><a href="verhaal53.html" title="Verhaal 53"><img src="images/verhaal86.jpg" alt="verhaal 53"></a>
-                            <figcaption>Familie</figcaption>
+                        <figure><a href="verhaal84.html" title="Verhaal 84"><img src="images/empty.jpg" alt="lege favorieten"></a>
+                            <figcaption>Leeg</figcaption>
                             </figure>
-                                 <ul>
-                                    <li><a href="verhaal53.html" title="Verhaal 53">53. Droom</a></li>
-                                    <li><button type="button"></button>
-                                        <button type="button"></button>
-                                    </li>
-                                    <li alt="2 sterren">&#10029;&#10029;</li>
-                                    <li></li>
+                                <ul>
+                                    <li><a href="verhaal84.html" title="Verhaal 84">Nog geen favorieten</a>
                                 </ul>
                     </article>
-                    <article>
-                        <figure><a href="verhaal93.html" title="Verhaal 93"><img src="images/verhaal87.jpg" alt="verhaal 93"></a>
-                            <figcaption>Drama</figcaption>
-                            </figure>
-                                 <ul>
-                                    <li><a href="verhaal93.html" title="Verhaal 93">93. Nico Dijkshoorn die Mart Smeets imiteert.</a></li>
-                                    <li><button type="button"></button>
-                                        <button type="button"></button>
-                                    </li>
-                                    <li alt="5 sterren">&#10029;&#10029;&#10029;&#10029;&#10029;</li>
-                                    <li></li>
-                                </ul>
-                    </article>
-                    <article>
-                        <figure><a href="verhaal101.html" title="Verhaal 101"><img src="images/verhaal88.jpg" alt="verhaal 101"></a>
-                            <figcaption>Horror</figcaption>
-                            </figure>
-                                 <ul>
-                                    <li><a href="verhaal101.html" title="Verhaal 101">101. Zombie</a></li>
-                                    <li><button type="button"></button>
-                                        <button type="button"></button>
-                                    </li>
-                                    <li alt="1 ster">&#10029;</li>
-                                    <li></li>
-                                </ul>
-                    </article>
-
-
-
                         </section>
 
                 </details>
@@ -114,6 +85,7 @@
                                 <ul>
                                     <li><a href="verhaal84.html" title="Verhaal 84">84. De verwarde man</a></li>
                                     <li><button type="button"></button>
+                                       <aside>Opgeslagen in favorieten</aside>
                                         <button type="button"></button>
                                     </li>
                                     <li alt="4 sterren">&#10029;&#10029;&#10029;&#10029;</li>
