@@ -164,7 +164,7 @@ body form button {
 
 option {
     font-size: 1.4em;
-    font-family: Museo300 !important;
+    font-family: 'Open Sans', sans-serif !important;
     padding: 1em;
     border: 1px solid grey;
 }
@@ -436,7 +436,7 @@ header form input[type="search"] {
     border: 0.5em;
     resize: vertical;
     font-size: 1em;
-    font-family: Museo300;
+    font-family: 'Open Sans', sans-serif;
     width: 8em;
 }
 
@@ -444,7 +444,7 @@ header form input[type="submit"] {
     padding: 0.7em 1em;
     border-radius: 0.8em;
     border: 0.5em;
-    font-family: Museo300;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     resize: vertical;
     color: black;
