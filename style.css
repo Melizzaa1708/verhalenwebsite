@@ -1,10 +1,7 @@
-@font-face {
-    font-family: Museo300;
-    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-300-webfont.woff2);
-}
+
 
 body {
-    font-family: Museo300;
+font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
